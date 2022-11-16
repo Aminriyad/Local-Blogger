@@ -11,3 +11,15 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+.amin{
+  color: whitesmoke;
+  background-color: black;
+  border-radius: 9px;
+  height: 3rem;
+  width: 10rem;
+  font-family:"Roboto", "Helvetica", "Arial", sans-serif;
+  font-weight: 700;
+}
+.amin:hover{
+  background-color: lightblue;
+}

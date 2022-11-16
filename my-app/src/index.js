@@ -3,15 +3,24 @@ import ReactDOM from 'react-dom';
 import './index.css';
 class Amin extends React.Component{
   state = {
-    age : 18
+    age : 18,
+    isit: "Click increment to see if it divided by two",
   }
   increment = () => {
-    this.setState({age: this.state.age+1});
-  }
+    this.setState({age: this.state.age-1});
+    if(this.state.age %2){
+      this.setState({second:"is divided by two"});
+    document.getElementById('amin').style.backgroundColor = "red"}
+    else{
+    this.setState({second:"is not divided by two"})
+    document.getElementById('amin').style.backgroundColor = "blue";}
+}
+
   render() {
     return <div>
+    <p>{this.state.second}</p>
     <p>{this.state.age}</p>
-    <button onClick={this.increment}>Increment</button>
+    <button onClick={this.increment} className="amin" id='amin'>Increment</button>
     </div>;
   }
 }
