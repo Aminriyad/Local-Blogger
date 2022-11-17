@@ -23,3 +23,15 @@ code {
 .amin:hover{
   background-color: lightblue;
 }
+.holder{
+  justify-content:center;
+  align-items:center;
+  display: grid ;
+}
+.holder p{
+  display: flex;
+  justify-content: center;
+}
+.holder button{
+  margin: 10px 0;
+}
