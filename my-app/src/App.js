@@ -1,33 +1,23 @@
-import React from "react";
+import React, {useState} from "react";
 import Aminer from './Aminer';
 import './index.css'
 const Amin = () => {
-  var state = {
-    age : 18,
-    isit: "Click increment to see if it divided by two"
-  };
-  var increment = () => {
-    this.setState({age: this.state.age+1});
-    if(this.state.age % 2){
-      this.setState({second:"is divided by two"});
-    document.getElementById('amin').style.backgroundColor = "red"}
-    else{
-    this.setState({second:"is not divided by two"})
-    document.getElementById('amin').style.backgroundColor = "blue";}
+  const [state, setState] = useState(18)
+  const [num, setnum] = useState("")
+  const increment = () => {
+    setState(state +1);
+    if(state % 2){setnum("is divided by two");}
+    else{setnum("is not divided by two")}
 };
-var decrement = () => {
-  this.setState({age: this.state.age-1});
-  if(this.state.age %2){
-    this.setState({second:"is divided by two"});
-  document.getElementById('aminer').style.backgroundColor = "red"}
-  else{
-  this.setState({second:"is not divided by two"})
-  document.getElementById('aminer').style.backgroundColor = "blue";};
+const decrement = () => {
+  setState(state -1);
+  if(state%2){setnum("is divided by two");}
+  else{setnum("is not divided by two")};
 };
 
     return( <div className='holder'>
-    <p>{state.second}</p>
-    <p>{state.age}</p>
+    <p>{num}</p>
+    <p>{state}</p>
     <button onClick={increment} className="amin" id='amin'>increment</button>
     <button onClick={decrement} className="amin" id='aminer'>decrement</button>
     <Aminer/>
