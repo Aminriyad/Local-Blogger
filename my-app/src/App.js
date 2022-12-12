@@ -1,27 +1,16 @@
-import React, {useState} from "react";
-import Aminer from './Aminer';
-import './index.css'
+import React from "react";
+import './index.css'; 
+import Home from './Home';
+import Navbar from "./Navbar";
 const Amin = () => {
-  const [state, setState] = useState(18)
-  const [num, setnum] = useState("")
-  const increment = () => {
-    setState(state +1);
-    if(state % 2){setnum("is divided by two");}
-    else{setnum("is not divided by two")}
-};
-const decrement = () => {
-  setState(state -1);
-  if(state%2){setnum("is divided by two");}
-  else{setnum("is not divided by two")};
-};
-
-    return( <div className='holder'>
-    <p>{num}</p>
-    <p>{state}</p>
-    <button onClick={increment} className="amin" id='amin'>increment</button>
-    <button onClick={decrement} className="amin" id='aminer'>decrement</button>
-    <Aminer/>
-    </div>)
+  return(
+    <div className="App">
+      <Navbar/>
+      <div className="content">
+        <Home/>
+      </div>
+    </div>
+  )
     }
 
 

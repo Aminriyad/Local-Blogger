@@ -1,37 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap');
+*{
+  margin: 0;
+  box-sizing: border-box;
+  font-family:'DM Serif Display',-apple-system, BlinkMacSystemFont;
+  color: black;
+  font-size: 25px;
+}
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
-}
-.amin{
-  color: whitesmoke;
-  background-color: black;
-  border-radius: 9px;
-  height: 3rem;
-  width: 10rem;
-  font-family:"Roboto", "Helvetica", "Arial", sans-serif;
-  font-weight: 700;
-}
-.amin:hover{
-  background-color: lightblue;
-}
-.holder{
-  justify-content:center;
-  align-items:center;
-  display: grid ;
-}
-.holder p{
-  display: flex;
+.App{
+  display: grid;
   justify-content: center;
+  align-items: center;
 }
-.holder button{
-  margin: 10px 0;
+a{
+text-decoration: none
+}
+.navbar{
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  max-width: 600px;
+  padding: 20px;
 }
