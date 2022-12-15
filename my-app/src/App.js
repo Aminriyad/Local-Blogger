@@ -1,5 +1,5 @@
 import React from "react";
-import './index.css'; 
+import './index.css';
 import Home from './Home';
 import Navbar from "./Navbar";
 const Amin = () => {
