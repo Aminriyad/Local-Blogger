@@ -4,7 +4,7 @@ const Home = () => {
 const [blogs, setblogs] = useState(null);
 
 const [name , setName] = useState("mario")
-const [Pending, setPending ] = useState(TextTrackCue)
+const [Pending, setPending ] = useState(true)
 useEffect(()=>{
     fetch("http://localhost:8000/blogs")
     .then(res =>{ return res.json();})
