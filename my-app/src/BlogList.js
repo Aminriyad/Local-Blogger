@@ -10,7 +10,6 @@ const BlogList = ({source,title,Deleter}) => {
                 {source.map((blog) => (
                     <div className="blog-preview" key={blog.id}>
                         <h2> {blog.title} </h2> <p> Written by {blog.author} </p>
-                        <button onClick={()=>Deleter(blog.id)}>Delete Blog</button>
                     </div>
                 ))}
             </div>

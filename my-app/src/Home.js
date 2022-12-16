@@ -1,26 +1,21 @@
 import { useEffect, useState } from "react";
 import BlogList from "./BlogList";
 const Home = () => {
-const [blogs, setblogs] = useState([
-    {title: "titleone",body: "bodyone",author: "authorone",id: 1},
-    {title: "titletwo",body: "bodytwo",author: "authortwo",id: 2},
-    {title: "titlethree",body: "bodythree",author: "authorthree",id: 3,}
-]);
+const [blogs, setblogs] = useState(null);
 
 const [name , setName] = useState("mario")
-const Deleter = (id) =>{
-    const newBlogs = blogs.filter(blog => blog.id !== id)
-    setblogs(newBlogs)
-}
+const [Pending, setPending ] = useState(TextTrackCue)
 useEffect(()=>{
-    console.log("kyjtdiyt")
-    console.log(blogs)
-
-},[name])//if the value between [] changes, the useEffect will be act
+    fetch("http://localhost:8000/blogs")
+    .then(res =>{ return res.json();})
+    .then(data => {console.log(data); setblogs(data) ;setPending(false)}
+    )}
+    ,[])///if the value between [] changes, the useEffect will be act
 return (
     <>
     <div className="home">
-    <BlogList source={blogs} title="all blogs's" Deleter={Deleter}/>
+     {Pending && <div>Loading ...</div>}
+    {blogs &&  <BlogList source={blogs} title="all blogs's"  /> }
     <button onClick={()=>setName('luigi')}>Change Name</button>
     <p>{name}</p>
     </div>
