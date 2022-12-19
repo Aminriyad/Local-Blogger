@@ -1,4 +1,4 @@
-const BlogList = ({source,title,Deleter}) => {
+const BlogList = ({source,title}) => {
 
 // const blogs =props.source;
 // const title = props.title;
