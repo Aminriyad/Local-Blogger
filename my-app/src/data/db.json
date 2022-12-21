@@ -16,11 +16,7 @@
   "profile": {
     "name": "typicode"
   },
-  "capitals":[{
-    "USA":"washington",
-    "France" : "Paris",
-    "Germany":"Berlin"
-    }],
+  "capitals":[{"name":"USA","capital":"washington","id":1},{"name":"Germany","capital":"Berlin","id":2},{"name":"France","capital": "Paris","id":3}],
       "blogs": [
         {
           "title": "My First Blog",

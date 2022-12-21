@@ -8,7 +8,7 @@ const [Pending, setPending ] = useState(true);
 const [error, setError] = useState(null)
 
 useEffect(()=>{
-    fetch("http://localhost:1111/blogs")
+    fetch("http://localhost:8000/blogs")
     .then(res => {if(!res.ok){throw Error("cant get data for ya")}
     /*
     1. notice that it only works if you change blogs ot blogss not the number
@@ -17,18 +17,19 @@ useEffect(()=>{
     3. respone, res, is only if the data searched for is there, success in fetching is neccasery, otherway massege will be "failed to fetch"*/
     return res.json();})
     .then(data => {
-        console.log(data); 
+        console.log(data);
         setblogs(data) ;
         setPending(false);
         setError(null)}
     /*
-    1. console.log(data), return the data to th console,
+    1. console.log(data), return the data to the console,
     2. setblogs(data), makings blogs = whatever the fuck fetch("http://localhost:1111/blogs") retruns,
     3. setPending(false) will make it a falsy value and <div>Loading ...</div> won't go throw*/
     ).catch(err =>{
         setPending(false)
         console.log(setError(err.message))})
     },[])///if the value between [] changes, the useEffect will be act
+
 return (
     <>
     <div className="home">
