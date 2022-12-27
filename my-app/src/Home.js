@@ -1,9 +1,8 @@
-import { useEffect, useState } from "react";
 import BlogList from "./BlogList";
 import useFetch from "./usefetch";
 const Home = () => {
 
-const {Data:blogs,error,Pending} = useFetch("https://localhost:8000")
+const {Data:blogs,error,Pending} = useFetch("http://localhost:8000/blogs")
 return (
     <>
     <div className="home">

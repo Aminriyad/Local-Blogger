@@ -13,7 +13,7 @@ const [error, setError] = useState(null);
         3. respone, res, is only if the data searched for is there, success in fetching is neccasery, otherway massege will be "failed to fetch"*/
         return res.json();})
         .then(data => {
-            console.log(data); 
+            console.log(data);
             setData(data) ;
             setPending(false);
             setError(null)}
