@@ -7,7 +7,7 @@ return (
     <>
     <div className="home">
     {Pending && <div>Loading ...</div>}
-    {Error && <div>{error}</div>}
+    {error && <div>{error}</div>}
     {blogs &&  <BlogList source={blogs} title="all blogs's"  /> }
     </div>
     </>

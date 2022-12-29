@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-
+//link are the same as ancor tags <a href="there">Link</a> ==== <link to="there">Click me</Link>
 const Navbar = () => {
     return (
         <nav className="navbar">
