@@ -3,10 +3,11 @@ import Home from './Home';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import Create from './Create';
 import BLogDetails from './BlogDetails';
+import { Link } from "react-router-dom"
 
-const Amin = () => {
+const App = () => {
   return (
-    <Router>
+<Router>
       <div className="App">
         <Navbar />
         <div className="content">
@@ -27,4 +28,4 @@ const Amin = () => {
   );
 }
 
-export default Amin;
+export default App;
