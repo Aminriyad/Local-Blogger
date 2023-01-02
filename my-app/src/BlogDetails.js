@@ -4,8 +4,9 @@ import useFetch from "./usefetch";
 const BLogDetails = () => {
     const { id } = useParams()
 
-    const {Data:blog,error,Pending} = useFetch(`http://localhost:8000/blogs/${id}`)
+    const {Data:blog,error,Pending} = useFetch(`http://localhost:9000/blogs/${id}`)
     return (<>
+    <h1>Your Page Number is {id}</h1>
     <div className="blog-details">
             {Pending && <div>Loading....</div>}
             {error && <div>{error}</div>}
@@ -17,7 +18,7 @@ const BLogDetails = () => {
                 </article>
             )}
                     </div>
-        <h2>not found - page {id}</h2>
+        
         </>
 
         );
