@@ -1,0 +1,45 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  },
+  "capitals": [
+    {
+      "name": "USA",
+      "capital": "washington",
+      "id": 1
+    },
+    {
+      "name": "Germany",
+      "capital": "Berlin",
+      "id": 2
+    },
+    {
+      "name": "France",
+      "capital": "Paris",
+      "id": 3
+    }
+  ],
+  "blogs": [
+    {
+      "Title": "fds",
+      "Body": "sd",
+      "Author": "sd",
+      "Time": "1/6/2023, 2:20:37 PM",
+      "id": 1
+    }
+  ]
+}

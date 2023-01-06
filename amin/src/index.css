@@ -62,7 +62,8 @@
   border: 0;
   padding: 8px;
   border-radius: 8px;
-  cursor: p
+  display: block;
+  margin: 0 auto;
 }
 /* create new blog form */
 .create {
@@ -94,4 +95,28 @@
   padding: 8px;
   border-radius: 8px;
   cursor: pointer;
+}
+.button{
+justify-content: center;
+display: flex;
+}
+.not-found * {
+  text-decoration: none ;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  padding: 0 10px 0 10px;
+}
+.not-found button{
+  margin-top:30px;
+  background-color:#f1356d;
+  border-radius: 8px;
+}
+
+.not-found button:hover{
+box-shadow: 2px 2px 50px 2px grey ;}
+
+.not-found button a{
+  color:white;
+  margin: 10px 5px 10px 5px;
 }
